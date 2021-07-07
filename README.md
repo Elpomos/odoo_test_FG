@@ -4,7 +4,7 @@ web designer test for Odoo
 
 Hello,
 
-Here is my test for the odoo web designer job.
+Here is my test for the Odoo web designer job.
 
 I tried to respect the example as much as possible. 
 However, I did modify a few things like same sized titles for all sections of the main part or correctly 
