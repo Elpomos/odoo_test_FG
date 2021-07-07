@@ -1,0 +1,170 @@
+// Scss Document
+@charset "utf-8";
+
+/* Variables ===========================================================================================================================*/
+
+$lightblue:#2f84ff; 
+$darkblue:#1e0e47;
+$gray: #57caa7;
+$brightblue: #fafbff;
+$lightgray: #e9ecef;
+$radius_size: 1rem;
+
+/* sass maps=========================================================================================================================== */
+
+$theme-colors: (
+  "primary": $lightblue,
+  "dark": $darkblue,
+  "light": #FFF,
+  "info": $gray,
+  "secondary": $brightblue
+);
+
+
+
+
+/* Layout ==============================================================================================================================*/
+
+
+/* general =============================================================================================================================*/
+
+a:hover {
+	color: $gray !important;
+	text-decoration: none!important;
+}
+
+.spacey {
+	height: 100px;
+}
+
+.rounded-xl {
+		border-radius: $radius_size !important;
+	}
+
+.thickwhiteborder {
+	border: 3px solid white !important;
+}
+
+.card {
+	border: 1px solid  $lightgray !important;
+}
+
+
+.dottedborder-blue {
+	border-bottom: 2px dotted $lightblue !important;
+}
+
+
+.thickborder-blue {
+	border-bottom: 3px solid $lightblue !important;
+}
+
+.thickborder-darkblue {
+	border-bottom: 3px solid $darkblue !important;
+}
+
+.grow {
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+	cursor: pointer;
+}
+
+.grow:hover {
+	transform: scale(1.2);
+}
+
+
+/* Header ==========================================================================================================================*/
+
+
+header {
+	clip-path: polygon(0 0, 0 100%, 100% calc(100% - 80px), 100% 0);
+	-webkit-clip-path: polygon(0 0, 0 100%, 100% calc(100% - 80px), 100% 0);
+}
+
+#payment_info {
+		border-radius: $radius_size $radius_size $radius_size*5 $radius_size;
+}
+
+#creditcard {
+	background-image: url("img/bg/world.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 70% 100%;
+}
+
+
+/* Main ==========================================================================================================================*/
+
+#infsolutions {
+	border-radius: 0rem $radius_size * 3 0rem $radius_size * 3;
+}
+
+.storeicons {
+     font-size: 39px;
+     margin-right: 10px
+ }
+
+.bg_black {
+	background-color: black !important;
+}
+
+.progress {
+	height: 0.2rem !important;
+}
+
+#progress_card {
+	position: relative;
+	top: 200px;
+	
+}
+
+#progress_img {
+	position: relative;
+	top: -180px;
+	left: 250px;
+}
+
+#jimmy {
+	border-radius: $radius_size $radius_size 0rem 0rem;
+}
+
+.overlayleft {
+	position: relative !important;
+	left: -30px !important;
+}
+
+
+.classy_line_dark { 
+    display:block;
+    border:none;
+    color:$darkblue;
+    height:1px;
+    background:#FFF;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 60, from($darkblue), to(#FFF));
+}
+
+/* Awards ==========================================================================================================================*/
+
+#awards {
+	clip-path: polygon(0 0, 0 100%, 100% calc(100% - 80px), 100% 0);
+	-webkit-clip-path: polygon(0 0, 0 100%, 100% calc(100% - 80px), 100% 0);
+}
+
+/* Footer ==========================================================================================================================*/
+
+footer {
+	clip-path: polygon(0 80px, 0 100%, 100% 100%, 100% 0);
+}
+
+.classy_line{ 
+    display:block;
+    border:none;
+    color:$gray;
+    height:1px;
+    background:$darkblue;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from($gray), to($darkblue));
+}
+
+/* bootstrap ==========================================================================================================================*/
+
+@import "bootstrap/scss/bootstrap";
